@@ -13,7 +13,7 @@ if n > 1 and n < 1000000:
 
     for i in range(0, len(lst)):
         lst[i] = int(lst[i])
-
+    
     tempOne = 0
     one = 0
     for i in range(0, len(lst)):
