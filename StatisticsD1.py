@@ -1,19 +1,21 @@
-n = int(input())
-lst = list(map(int, input().split()))
+n = int(input("How many elements would you like in the array: "))
+lst = list(map(int, input("Enter elements separated by space: ").split()))
 lst.sort()
+
+print("Results printed as: \nQ1 \nQ2 \nQ3 \n\n")
 
 def evenCalc(list):
     leftMid = list[(len(list)//2)-1]
     rightMid = list[len(list)//2]
     median = (leftMid + rightMid)//2
-    return(median)
+    return (median)
 
 def oddCalc(list):
     n = []
     for i in range(len(list)//2, len(list)):
         n.append(list[i])
     median = n.pop(0)
-    return(median)
+    return (median)
 
 def halfMedian(list):
     lHalf = []
@@ -43,6 +45,7 @@ if len(lst) % 2 == 0:
 else:
     n = oddCalc(lst)
 
+print("Results:")
 res.insert(1, n)
 for i in res:
     print(i)
