@@ -15,5 +15,4 @@ for n in range(0, 4): #0-4 because we do n+2 on last column, 4+2=6 and this is a
         temp = ((top)+(mid)+(bottom))
         if temp > res:
             res = temp
-
 print(res)
